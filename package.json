@@ -1,6 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "type": "module",
   "description": "[![Actions Status](https://github.com/shelestova-a/js-starter-project-44/workflows/hexlet-check/badge.svg)](https://github.com/shelestova-a/js-starter-project-44/actions)",
   "main": "index.js",
   "scripts": {
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/shelestova-a/js-starter-project-44/issues"
   },
-  "homepage": "https://github.com/shelestova-a/js-starter-project-44#readme"
+  "homepage": "https://github.com/shelestova-a/js-starter-project-44#readme",
+  "devDependencies": {
+    "eslint": "^8.29.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  }
 }
