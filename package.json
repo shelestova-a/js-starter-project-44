@@ -4,6 +4,10 @@
   "type": "module",
   "description": "[![Actions Status](https://github.com/shelestova-a/js-starter-project-44/workflows/hexlet-check/badge.svg)](https://github.com/shelestova-a/js-starter-project-44/actions)",
   "main": "index.js",
+  "bin": {
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,9 +24,13 @@
   "devDependencies": {
     "eslint": "^8.29.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-jest": "^27.1.6",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
   }
 }
