@@ -2,6 +2,15 @@ import readlineSync from 'readline-sync';
 
 import * as index from '../index.js';
 
+const buildStr = (array) => {
+  let result = '';
+  // eslint-disable-next-line no-restricted-syntax
+  for (const item of array) {
+    result = `${result} ${item}`;
+  }
+  return result;
+};
+
 export const callProgression = () => {
   const name = index.greeting();
   console.log('What number is missing in the progression?');
@@ -20,7 +29,8 @@ export const callProgression = () => {
     }
     const correctAnswer = result[indexMissed];
     result[indexMissed] = '..';
-    console.log(`Question: ${result}`);
+    const resultStr = buildStr(result);
+    console.log(`Question: ${resultStr}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer * 1 === correctAnswer) {
       i += 1;
