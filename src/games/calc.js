@@ -17,7 +17,7 @@ export const count = (operator, number1, number2) => {
   }
 };
 
-export const calculate = () => {
+const calculate = () => {
   const name = index.greeting();
   console.log('What is the result of the expression?');
   let i = 0;
@@ -38,3 +38,5 @@ export const calculate = () => {
   }
   return `Congratulations, ${name}!`;
 };
+
+export default calculate;

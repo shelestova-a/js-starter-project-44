@@ -26,7 +26,7 @@ export const count = (numberOne, numberTwo) => {
   return result;
 };
 
-export const findGcd = () => {
+const findGcd = () => {
   const name = index.greeting();
   console.log('Find the greatest common divisor of given numbers.');
   let i = 0;
@@ -45,3 +45,5 @@ export const findGcd = () => {
   }
   return `Congratulations, ${name}!`;
 };
+
+export default findGcd;

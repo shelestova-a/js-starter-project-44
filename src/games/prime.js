@@ -13,7 +13,7 @@ export const checkIsPrime = (number) => {
   return 'yes';
 };
 
-export const isPrime = () => {
+const isPrime = () => {
   const name = index.greeting();
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   let i = 0;
@@ -32,3 +32,5 @@ export const isPrime = () => {
   }
   return `Congratulations, ${name}!`;
 };
+
+export default isPrime;
