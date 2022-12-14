@@ -20,7 +20,7 @@ export const game = () => {
       i += 1;
       console.log('Correct!');
     } else {
-      return `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`;
+      return `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${name}!`;
     }
   }
   return `Congratulations, ${name}!`;
