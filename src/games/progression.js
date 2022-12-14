@@ -11,7 +11,7 @@ const buildStr = (array) => {
   return result;
 };
 
-export const callProgression = () => {
+const callProgression = () => {
   const name = index.greeting();
   console.log('What number is missing in the progression?');
   let i = 0;
@@ -41,3 +41,5 @@ export const callProgression = () => {
   }
   return `Congratulations, ${name}!`;
 };
+
+export default callProgression;

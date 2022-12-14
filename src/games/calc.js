@@ -6,14 +6,14 @@ const operators = ['+', '-', '*'];
 
 export const count = (operator, number1, number2) => {
   switch (operator) {
-  case operators[0]:
-    return number1 + number2;
-  case operators[1]:
-    return number1 - number2;
-  case operators[2]:
-    return number1 * number2;
-  default:
-    return null;
+    case operators[0]:
+      return number1 + number2;
+    case operators[1]:
+      return number1 - number2;
+    case operators[2]:
+      return number1 * number2;
+    default:
+      return null;
   }
 };
 
