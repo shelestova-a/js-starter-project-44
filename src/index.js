@@ -7,6 +7,4 @@ export const greeting = () => {
   return name;
 };
 
-export const random = Math.floor(Math.random() * 100);
-
 export const max = 3;
