@@ -6,7 +6,7 @@ export const count = (numberOne, numberTwo) => {
   let numberOneNew = numberOne;
   let numberTwoNew = numberTwo;
   let result;
-  if (numberOne > numberTwo) {
+  if (numberOne >= numberTwo) {
     while (numberTwoNew >= 0) {
       if ((numberOne % numberTwoNew === 0) && (numberTwo % numberTwoNew === 0)) {
         result = numberTwoNew;
