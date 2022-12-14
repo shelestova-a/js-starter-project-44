@@ -8,3 +8,6 @@ https://asciinema.org/a/ixLPLR5JGf5PB98bC0OJCh6vGl
 
 Brain-calc.js:
 https://asciinema.org/a/9ABCo0ln3MfNVOTeFgJgjbTGj
+
+Brain-gcd.js:
+https://asciinema.org/a/KM5bDqqUy4y59yWod1TSKFR2E
