@@ -4,4 +4,7 @@
 <a href="https://codeclimate.com/github/shelestova-a/js-starter-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/82e3d687dba5196563bc/maintainability" /></a>
 
 Brain-even.js:
-https://asciinema.org/a/ixLPLR5JGf5PB98bC0OJCh6vG
+https://asciinema.org/a/ixLPLR5JGf5PB98bC0OJCh6vGl
+
+Brain-calc.js:
+https://asciinema.org/a/9ABCo0ln3MfNVOTeFgJgjbTGj
