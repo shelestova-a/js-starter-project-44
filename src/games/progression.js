@@ -30,9 +30,9 @@ export const callProgression = () => {
     const correctAnswer = result[indexMissed];
     result[indexMissed] = '..';
     const resultStr = buildStr(result);
-    console.log(`Question: ${resultStr}`);
+    console.log(`Question:${resultStr}`);
     const answer = readlineSync.question('Your answer: ');
-    if (answer * 1 === correctAnswer) {
+    if (answer === `${correctAnswer}`) {
       i += 1;
       console.log('Correct!');
     } else {
