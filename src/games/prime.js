@@ -1,4 +1,4 @@
-import * as index from '../index.js';
+import play from '../index.js';
 
 export const checkIsPrime = (number) => {
   let divider = 2;
@@ -20,7 +20,7 @@ const isPrime = () => {
     const correctAnswer = checkIsPrime(number);
     rounds.push([question, correctAnswer.toString()]);
   }
-  return index.play(description, rounds);
+  return play(description, rounds);
 };
 
 export default isPrime;

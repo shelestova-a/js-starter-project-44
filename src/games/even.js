@@ -1,4 +1,4 @@
-import * as index from '../index.js';
+import play from '../index.js';
 
 const isEven = () => {
   const description = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -13,7 +13,7 @@ const isEven = () => {
     }
     rounds.push([question, correctAnswer]);
   }
-  return index.play(description, rounds);
+  return play(description, rounds);
 };
 
 export default isEven;

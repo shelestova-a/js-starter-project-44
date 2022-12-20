@@ -1,4 +1,4 @@
-import * as index from '../index.js';
+import play from '../index.js';
 
 export const count = (number1, number2) => {
   let number1New = number1;
@@ -34,7 +34,7 @@ const findGcd = () => {
     const correctAnswer = count(number1, number2);
     rounds.push([question, correctAnswer.toString()]);
   }
-  return index.play(description, rounds);
+  return play(description, rounds);
 };
 
 export default findGcd;

@@ -1,4 +1,4 @@
-import * as index from '../index.js';
+import play from '../index.js';
 
 const callProgression = () => {
   const description = 'What number is missing in the progression?';
@@ -19,7 +19,7 @@ const callProgression = () => {
     const question = result.join(' ');
     rounds.push([question, correctAnswer.toString()]);
   }
-  return index.play(description, rounds);
+  return play(description, rounds);
 };
 
 export default callProgression;

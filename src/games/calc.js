@@ -1,4 +1,4 @@
-import * as index from '../index.js';
+import play from '../index.js';
 
 const runCalc = () => {
   const description = 'What is the result of the expression?';
@@ -19,7 +19,7 @@ const runCalc = () => {
     }
     rounds.push([question, correctAnswer.toString()]);
   }
-  return index.play(description, rounds);
+  return play(description, rounds);
 };
 
 export default runCalc;
