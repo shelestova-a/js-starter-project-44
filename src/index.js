@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 import greeting from './cli.js';
 
-export const play = (description, rounds) => {
+const play = (description, rounds) => {
   const name1 = greeting();
   console.log(`${description}`);
   let i = 0;
@@ -19,3 +19,5 @@ export const play = (description, rounds) => {
   }
   return `Congratulations, ${name1}!`;
 };
+
+export default play;
