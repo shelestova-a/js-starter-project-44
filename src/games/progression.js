@@ -1,14 +1,5 @@
 import * as index from '../index.js';
 
-const buildStr = (array) => {
-  let result = '';
-  // eslint-disable-next-line no-restricted-syntax
-  for (const item of array) {
-    result = `${result} ${item}`;
-  }
-  return result;
-};
-
 const callProgression = () => {
   const description = 'What number is missing in the progression?';
   const rounds = [];
@@ -25,7 +16,7 @@ const callProgression = () => {
     }
     const correctAnswer = result[indexMissed];
     result[indexMissed] = '..';
-    const question = buildStr(result);
+    const question = result.join(' ');
     rounds.push([question, correctAnswer.toString()]);
   }
   return index.play(description, rounds);
