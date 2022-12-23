@@ -2,7 +2,10 @@ import play from '../index.js';
 
 import getRandom from '../utils.js';
 
-const findGcd = (a, b) => b === 0 ? Math.abs(a) : findGcd(b, a % b);
+const findGcd = (a, b) => {
+  const result = (b === 0 ? Math.abs(a) : findGcd(b, a % b));
+  return result;
+};
 
 const runGcd = () => {
   const description = 'Find the greatest common divisor of given numbers.';
