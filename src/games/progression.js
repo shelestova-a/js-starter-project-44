@@ -1,25 +1,33 @@
 import play from '../index.js';
 
+import getRandom from '../utils.js';
+
+const makeProgression = (number, difference) => {
+  const result = [number];
+  let number1 = number;
+  const totalNumbers = 9;
+  for (let i = 0; i < totalNumbers; i += 1) {
+    number1 += difference;
+    result.push(number1);
+  }
+  return result;
+};
+
 const callProgression = () => {
   const description = 'What number is missing in the progression?';
-  const rounds = [];
-  for (let i = 0; i < 3; i += 1) {
-    let number = Math.floor(Math.random() * 100);
-    const difference = Math.floor(Math.random() * 100);
-    const result = [number];
-    const indexMissed = Math.floor(Math.random() * 10);
-    let j = 0;
-    while (j < 9) {
-      number += difference;
-      result.push(number);
-      j += 1;
-    }
+  const questionAnswerPairs = [];
+  const numberOfQuestions = 3;
+  for (let i = 0; i < numberOfQuestions; i += 1) {
+    const number = getRandom(100);
+    const difference = getRandom(100);
+    const indexMissed = getRandom(10);
+    const result = makeProgression(number, difference);
     const correctAnswer = result[indexMissed];
     result[indexMissed] = '..';
     const question = result.join(' ');
-    rounds.push([question, correctAnswer.toString()]);
+    questionAnswerPairs.push([question, correctAnswer.toString()]);
   }
-  return play(description, rounds);
+  return play(description, questionAnswerPairs);
 };
 
 export default callProgression;

@@ -1,26 +1,32 @@
 import play from '../index.js';
 
-export const checkIsPrime = (number) => {
+import getRandom from '../utils.js';
+
+const isPrime = (number) => {
+  if (number === 1 || number === 0) {
+    return false;
+  }
   let divider = 2;
   while (divider <= number / 2) {
     if (number % divider === 0) {
-      return 'no';
+      return false;
     }
     divider += 1;
   }
-  return 'yes';
+  return true;
 };
 
-const isPrime = () => {
+const runPrime = () => {
   const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const rounds = [];
-  for (let i = 0; i < 3; i += 1) {
-    const number = Math.floor(Math.random() * 100);
+  const questionAnswerPairs = [];
+  const numberOfQuestions = 3;
+  for (let i = 0; i < numberOfQuestions; i += 1) {
+    const number = getRandom(100);
     const question = `${number}`;
-    const correctAnswer = checkIsPrime(number);
-    rounds.push([question, correctAnswer.toString()]);
+    const correctAnswer = isPrime(number) ? 'yes' : 'no';
+    questionAnswerPairs.push([question, correctAnswer.toString()]);
   }
-  return play(description, rounds);
+  return play(description, questionAnswerPairs);
 };
 
-export default isPrime;
+export default runPrime;

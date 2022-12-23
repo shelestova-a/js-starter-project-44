@@ -1,25 +1,35 @@
 import play from '../index.js';
 
+import getRandom from '../utils.js';
+
+const operators = ['+', '-', '*'];
+
+const count = (operator, number1, number2) => {
+  switch (operator) {
+  case '+':
+    return number1 + number2;
+  case '-':
+    return number1 - number2;
+  case '*':
+    return number1 * number2;
+  default:
+    return null;
+  }
+};
+
 const runCalc = () => {
   const description = 'What is the result of the expression?';
-  const rounds = [];
-  for (let i = 0; i < 3; i += 1) {
-    const number1 = Math.floor(Math.random() * 100);
-    const number2 = Math.floor(Math.random() * 100);
-    const operators = ['+', '-', '*'];
-    const operator = operators[Math.floor(Math.random() * 3)];
+  const questionAnswerPairs = [];
+  const numberOfQuestions = 3;
+  for (let i = 0; i < numberOfQuestions; i += 1) {
+    const number1 = getRandom(100);
+    const number2 = getRandom(100);
+    const operator = operators[getRandom(operators.length)];
     const question = `${number1} ${operator} ${number2}`;
-    let correctAnswer;
-    if (operator === operators[0]) {
-      correctAnswer = number1 + number2;
-    } else if (operator === operators[1]) {
-      correctAnswer = number1 - number2;
-    } else if (operator === operators[2]) {
-      correctAnswer = number1 * number2;
-    }
-    rounds.push([question, correctAnswer.toString()]);
+    const correctAnswer = count(operator, number1, number2);
+    questionAnswerPairs.push([question, correctAnswer.toString()]);
   }
-  return play(description, rounds);
+  return play(description, questionAnswerPairs);
 };
 
 export default runCalc;
