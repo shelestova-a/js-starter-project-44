@@ -9,6 +9,17 @@ Brain Games is a JavaScript project made from scratch for Node.js runtime enviro
 program to greet the user and five games to train user`s calculation skills.
 
 
+## Project set up
+<ol>
+  <li><p>clone the repository from GitHub.com</p>
+<p><code>git clone https://github.com/shelestova-a/js-starter-project-44.git</code></p></li>
+<li><p>reproduce the environment for the project inside the module’s root folder</p>
+<p><code>npm ci</code></p></li>
+<li><p>choose the game and start playing</p>
+<p><code>brain-even</code></p></li>
+</ol>
+
+
 ## How to play games
 There are six CLI commands:
 <ol>
@@ -50,17 +61,6 @@ check if the random number is prime
 
 ## Technical requirements
 <img src="https://img.shields.io/badge/node-v19.2.0-green.svg">
-
-
-## Project set up
-<ol>
-  <li><p>clone the repository from GitHub.com</p>
-<p><code>git clone https://github.com/shelestova-a/js-starter-project-44.git</code></p></li>
-<li><p>reproduce the environment for the project inside the module’s root folder</p>
-<p><code>npm ci</code></p></li>
-<li><p>choose the game and start playing</p>
-<p><code>brain-even</code></p></li>
-</ol>
 
 
 ## Hexlet tests and linter status
