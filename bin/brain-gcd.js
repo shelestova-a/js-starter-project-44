@@ -2,4 +2,4 @@
 
 import runGcd from '../src/games/gcd.js';
 
-console.log(runGcd());
+runGcd();

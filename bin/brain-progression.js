@@ -2,4 +2,4 @@
 
 import callProgression from '../src/games/progression.js';
 
-console.log(callProgression());
+callProgression();

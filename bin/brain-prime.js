@@ -2,4 +2,4 @@
 
 import runPrime from '../src/games/prime.js';
 
-console.log(runPrime());
+runPrime();

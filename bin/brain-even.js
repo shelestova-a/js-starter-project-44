@@ -2,4 +2,4 @@
 
 import runEven from '../src/games/even.js';
 
-console.log(runEven());
+runEven();
