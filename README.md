@@ -1,8 +1,6 @@
 <h1 align="center">Brain Games</h1>
-<hr>
 
 <h2 align="center">About the Project</h2>
-<hr>
 
 ## Project description
 Brain Games is a JavaScript project made from scratch for Node.js runtime environment. 'Brain Games' includes 
