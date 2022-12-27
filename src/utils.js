@@ -1,4 +1,4 @@
-const getRandomNumber = (maxNumber = 100, minNumber = 1) => {
+const getRandomNumber = (minNumber = 1, maxNumber = 100) => {
   const result = Math.floor(Math.random() * (maxNumber - minNumber) + minNumber);
   return result;
 };
