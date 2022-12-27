@@ -1,4 +1,4 @@
-import play from '../index.js';
+import { questionsCount, play } from '../index.js';
 
 import getRandomNumber from '../utils.js';
 
@@ -10,7 +10,6 @@ const findGcd = (a, b) => {
 const runGcd = () => {
   const description = 'Find the greatest common divisor of given numbers.';
   const questionAnswerPairs = [];
-  const questionsCount = 3;
   for (let i = 0; i < questionsCount; i += 1) {
     const number1 = getRandomNumber();
     const number2 = getRandomNumber();

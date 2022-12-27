@@ -1,4 +1,4 @@
-import play from '../index.js';
+import { questionsCount, play } from '../index.js';
 
 import getRandomNumber from '../utils.js';
 
@@ -15,11 +15,10 @@ const makeProgression = (number, difference, numbersCount = 9) => {
 const callProgression = () => {
   const description = 'What number is missing in the progression?';
   const questionAnswerPairs = [];
-  const questionsCount = 3;
   for (let i = 0; i < questionsCount; i += 1) {
     const number = getRandomNumber();
     const difference = getRandomNumber();
-    const indexMissed = getRandomNumber(9, 0);
+    const indexMissed = getRandomNumber(0, 9);
     const result = makeProgression(number, difference);
     const correctAnswer = result[indexMissed];
     result[indexMissed] = '..';

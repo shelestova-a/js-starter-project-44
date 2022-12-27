@@ -1,4 +1,4 @@
-import play from '../index.js';
+import { questionsCount, play } from '../index.js';
 
 import getRandomNumber from '../utils.js';
 
@@ -20,11 +20,10 @@ const count = (operator, number1, number2) => {
 const runCalc = () => {
   const description = 'What is the result of the expression?';
   const questionAnswerPairs = [];
-  const questionsCount = 3;
   for (let i = 0; i < questionsCount; i += 1) {
     const number1 = getRandomNumber();
     const number2 = getRandomNumber();
-    const operator = operators[getRandomNumber(operators.length, 0)];
+    const operator = operators[getRandomNumber(0, operators.length)];
     const question = `${number1} ${operator} ${number2}`;
     const correctAnswer = count(operator, number1, number2);
     questionAnswerPairs.push([question, correctAnswer.toString()]);

@@ -2,10 +2,11 @@ import readlineSync from 'readline-sync';
 
 import greeting from './cli.js';
 
-const play = (description, questionAnswerPairs) => {
+export const questionsCount = 3;
+
+export const play = (description, questionAnswerPairs) => {
   const name = greeting();
   console.log(`${description}`);
-  const questionsCount = 3;
   for (let i = 0; i < questionsCount; i += 1) {
     const [question, correctAnswer] = questionAnswerPairs[i];
     console.log(`Question: ${question}`);
@@ -19,4 +20,4 @@ const play = (description, questionAnswerPairs) => {
   return `Congratulations, ${name}!`;
 };
 
-export default play;
+// export default play;
