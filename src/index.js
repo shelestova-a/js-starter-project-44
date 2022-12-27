@@ -7,9 +7,9 @@ const play = (description, questionAnswerPairs) => {
   console.log(`${description}`);
   const questionsCount = 3;
   for (let i = 0; i < questionsCount; i += 1) {
-    console.log(`Question: ${questionAnswerPairs[i][0]}`);
+    const [question, correctAnswer] = questionAnswerPairs[i];
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-    const correctAnswer = questionAnswerPairs[i][1];
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
